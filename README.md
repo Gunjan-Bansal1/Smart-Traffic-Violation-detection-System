@@ -47,7 +47,6 @@ Major causes of road fatalities/injuries include riding without a helmet and jum
 
 The system follows a sequential pipeline to process video data:
 
-```mermaid
 graph TD
     A[Input Video Feed] --> B[Video Preprocessing]
     B --> C[Object Detection (YOLO)]
@@ -61,7 +60,6 @@ graph TD
     H -->|Violation Detected| I
     I --> J[Save Record & Image]
     I --> K[Dashboard Visualization]
-```
 
 1.  **Input**: Raw CCTV footage (`mp4`).
 2.  **Preprocessing**: Frame extraction, resizing, and normalization using OpenCV.
